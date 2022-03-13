@@ -5,7 +5,7 @@ This is the Repository, to create an Infrastructure Stack for Pokefinder Discord
 This Stack includes:
 
 MariaDB: SQL Database for storing all relevant information 
-PHPMyAdmin: User Interface to chech the Database
+PHPMyAdmin: User Interface to check the Database
 Mosquito: MQTT Broker to recieve Commands
 Webhook: Webhook Reciever
 
