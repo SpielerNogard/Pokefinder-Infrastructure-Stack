@@ -1,5 +1,6 @@
 version: "3.7"
 services:
+
   mariadb:
     image: mariadb:10.4
     restart: always
@@ -19,6 +20,17 @@ services:
       - PMA_HOST=mariadb
     depends_on:
       - mariadb
+
+  mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - 1883:1883
+      - 9001:9001
+
+  webhook:
+    image: stctmuel/pokefinder-infrastructure-stack
+    ports:
+      - 5001:5000
 
 volumes:
   mariadb-data:
