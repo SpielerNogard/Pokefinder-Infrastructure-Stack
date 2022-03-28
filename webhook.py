@@ -30,7 +30,7 @@ def index():
             print(f"Published on: MAD/{data.get('type', 'fail')}")
         return "OK"
     except Exception as e:
-        print(e)
+        print(f'{e}')
         return abort(400)
 
 
