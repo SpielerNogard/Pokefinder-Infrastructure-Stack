@@ -3,7 +3,7 @@ import json
 import paho.mqtt.client as mqtt
 from logging import getLogger
 TOPIC3 = "Pokefinder/answers"
-BROKER_ADDRESS = "0.0.0.0"
+BROKER_ADDRESS = "51.255.143.136"
 PORT = 1883
 QOS = 1
 app = Flask(__name__)
