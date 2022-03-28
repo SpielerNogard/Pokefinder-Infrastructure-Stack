@@ -7,7 +7,7 @@ BROKER_ADDRESS = "51.255.143.136"
 PORT = 1883
 QOS = 1
 app = Flask(__name__)
-logger = getLogger(__name__)
+logger = getLogger()
 
 @app.route("/", methods=['POST'])
 def index():
